@@ -1,0 +1,111 @@
+{
+  "name": "test",
+  "description": "Тестовый диалплан",
+  "type": "incoming",
+  "puzzles": [
+    {
+      "name": "Start1",
+      "puzzle": {
+        "name": "Start1"
+      },
+      "values": {
+        "first_puzzle": {
+          "type": "LINK",
+          "value": "IfTime1"
+        },
+        "post_puzzle": {
+          "type": "LINK",
+          "value": "Hangup1"
+        }
+      }
+    },
+    {
+      "name": "IfTime1",
+      "puzzle": {
+        "name": "IfTime1"
+      },
+      "values": {
+        "name": {
+          "type": "STRING",
+          "value": "My Name Is 'IfTime1'"
+        },
+        "on_puzzle": {
+          "type": "LINK",
+          "value": "onMusic1"
+        },
+        "off_puzzle": {
+          "type": "LINK",
+          "value": "offMusic1"
+        },
+        "post_puzzle": {
+          "type": "LINK",
+          "value": "Hangup1"
+        },
+        "schedule": {
+          "type": "TIME",
+          "value": "8:00"
+        }
+      }
+    },
+    {
+      "name": "onMusic1",
+      "puzzle": {
+        "name": "Music1"
+      },
+      "values": {
+        "name": {
+          "type": "STRING",
+          "value": "Music on"
+        },
+        "post_puzzle": {
+          "type": "LINK",
+          "value": "Queue1"
+        }
+      }
+    },
+    {
+      "name": "offMusic1",
+      "puzzle": {
+        "name": "Music1"
+      },
+      "values": {
+        "name": {
+          "type": "STRING",
+          "value": "Music off"
+        },
+        "post_puzzle": {
+          "type": "LINK",
+          "value": "Hangup1"
+        }
+      }
+    },
+    {
+      "name": "Queue1",
+      "puzzle": {
+        "name": "Queue1"
+      },
+      "values": {
+        "name": {
+          "type": "STRING",
+          "value": "Small Queue"
+        },
+        "queue": {
+          "type": "STRING",
+          "value": "Queue1"
+        }
+      }
+    },
+    {
+      "name": "Hangup1",
+      "puzzle": {
+        "name": "Hangup1"
+      },
+      "values": {
+        "name": {
+          "type": "STRING",
+          "value": "Hangup"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+export const PUZZLE_VALUE_CHANGED = 'PUZZLE_VALUE_CHANGED';
+export const PUZZLE_LOADING = 'PUZZLE_LOADING';
+export const PUZZLE_LOADED = 'PUZZLE_LOADED';
+
+//для тестирования
+export const PUZZLE_LOADING_ERROR = 'PUZZLE_LOADING_ERROR';

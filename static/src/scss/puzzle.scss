@@ -1,0 +1,63 @@
+.puzzle {
+  width: 15rem;
+  border-radius: 5px;
+  background: #C0FFFF;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+
+  &_name {
+    background: rgba(#000, 0.25);
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &_param-list {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  &_param-value {
+    display: flex;
+    padding: 0.5rem 0.5rem 0 0.5rem;
+
+    &:last-of-type {
+      padding-bottom: 0.5rem;
+    }
+  }
+
+  &_input {
+    background: rgba(#000, 0.3);
+    outline: none;
+    margin-left: 1rem;
+    border: 1px solid rgba(#fff, 0.7);
+    border-radius: 3px;
+    flex: 1
+  }
+
+  &_port {
+    position: absolute;
+    z-index: 10;
+    opacity: 0;
+    border-radius: 50%;
+
+    &:hover {
+      opacity: 1;
+    }
+
+    &.is-out {
+      top: 50%;
+      right: 0;
+    }
+
+    &.is-in {
+      top: 50%;
+      left: 0;
+    }
+  }
+}
