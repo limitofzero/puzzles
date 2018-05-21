@@ -6,10 +6,8 @@ cd static/
 npm install
 npm run build
 
-#сервер
-cd ../
-pip install -r requirements.txt
-python3 app.py
+После этого запускаем сервер
+С сервером не совсем разобрался. Пока не могу настроить окружение без pycharm(из нее все работает)
 
 Тестировал на ubuntu в браузере chrome 66. На других работу не проверял.
 
